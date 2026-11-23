@@ -1,0 +1,35 @@
+{
+  "method": "independent-coupling conditional flow matching",
+  "path": "x_t=(1-t)z+t*x; z~N(0,I)",
+  "target_velocity": "x-z",
+  "condition_dimensions": 9,
+  "model_hidden": 224,
+  "model_hidden_layers": 4,
+  "time_encoding": "t plus sin/cos of pi*[1,2,3,4]*t",
+  "selection_metric": "validation fixed-Monte-Carlo flow-matching MSE (4 shared noise/time draws)",
+  "selection_caveat": "Different training objectives; not identical NLL checkpoint selection to spline baseline",
+  "likelihood": "reverse RK4 ODE, exact five-dimensional divergence, 128 steps, float32",
+  "likelihood_convergence_check": "64 versus 128 steps on a fixed validation subset, before test NLL",
+  "primary_sampling": "RK4,32 steps; solver sweep is descriptive, not test-selected",
+  "epochs": 30,
+  "patience": 6,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "threads": 2,
+  "device": "cpu",
+  "batch_size": 512,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 5.0,
+  "split_manifest_matches_baseline": true,
+  "preprocessing_matches_baseline": true,
+  "comparison_status": "Exploratory extension on the existing shared test split; not a new untouched confirmation set",
+  "sources": [
+    "https://arxiv.org/abs/2210.02747",
+    "https://facebookresearch.github.io/flow_matching/generated/flow_matching.solver.ODESolver.html"
+  ]
+}

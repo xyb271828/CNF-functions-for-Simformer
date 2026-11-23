@@ -1,0 +1,23 @@
+[
+  {
+    "seed": 11,
+    "validation_simulations": 256,
+    "mean_abs_nll_64_vs_128": 1.3979151844978333e-06,
+    "max_abs_nll_64_vs_128": 7.62939453125e-06,
+    "mean_signed_nll_64_minus_128": -2.514570951461792e-08
+  },
+  {
+    "seed": 22,
+    "validation_simulations": 256,
+    "mean_abs_nll_64_vs_128": 1.3355165719985962e-06,
+    "max_abs_nll_64_vs_128": 8.106231689453125e-06,
+    "mean_signed_nll_64_minus_128": 1.1175870895385742e-08
+  },
+  {
+    "seed": 33,
+    "validation_simulations": 256,
+    "mean_abs_nll_64_vs_128": 1.432374119758606e-06,
+    "max_abs_nll_64_vs_128": 8.58306884765625e-06,
+    "mean_signed_nll_64_minus_128": -2.868473529815674e-07
+  }
+]

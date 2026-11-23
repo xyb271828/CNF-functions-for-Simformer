@@ -1,0 +1,11 @@
+{
+  "cooling_beam_detuning": -120.0,
+  "cooling_beam_radius": 10.0,
+  "cooling_beam_power_mw": 100.0,
+  "push_beam_detuning": -100.0,
+  "push_beam_radius": 1.0,
+  "push_beam_power": 5.0,
+  "push_beam_offset": 0.0,
+  "quadrupole_gradient": 50.0,
+  "vertical_bias_field": 0.0
+}

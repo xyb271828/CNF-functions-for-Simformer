@@ -1,0 +1,32 @@
+{
+  "raw_atom_rows": 516218,
+  "exact_duplicate_atom_rows": 258109,
+  "deduplicated_atom_rows": 258109,
+  "parameter_rows": 461897,
+  "parameter_id_resets": 1,
+  "input_sha256": {
+    "compiled_vectors-0.05.csv": "dc9d1a213205cccc61afb66898fde8a0e0f6daaa2ae70ac8b9d4a0595d050ac9",
+    "input_data(full).csv": "50d57fecebcebbfb8c936949a80f6d1ebb8615aaa00d21faf7952d0569c558dd"
+  },
+  "after_spatial_cut_rows": 258041,
+  "ambiguous_parameter_ids": 146446,
+  "atom_rows_with_ambiguous_ids": 224540,
+  "atom_rows_with_missing_ids": 77,
+  "unique_key_matched_rows_before_finite_filter": 33424,
+  "final_rows": 33424,
+  "final_simulations": 12478,
+  "retained_fraction_of_unique_atoms": 0.1294956781824733,
+  "scope": "Unique-key subset only; selection bias is possible. Unique simulation keys are consistent in the supplied table but do not independently prove source provenance.",
+  "train": {
+    "rows": 23195,
+    "simulations": 8734
+  },
+  "validation": {
+    "rows": 4857,
+    "simulations": 1872
+  },
+  "test": {
+    "rows": 5372,
+    "simulations": 1872
+  }
+}

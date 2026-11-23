@@ -1,0 +1,7 @@
+{
+  "simulation_disjoint": true,
+  "identical_context_configurations_disjoint": true,
+  "duplicate_context_configurations_across_retained_ids": 0,
+  "training_weighted_target_mean_max_abs": 3.9225312146918874e-10,
+  "training_weighted_context_mean_max_abs": 4.6185589163586375e-10
+}

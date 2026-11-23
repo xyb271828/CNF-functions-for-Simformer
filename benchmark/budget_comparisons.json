@@ -1,0 +1,26 @@
+{
+  "spline_minus_fm30": {
+    "baseline_minus_candidate_group_nll": -0.31783362934309645,
+    "paired_simulation_bootstrap_95_ci": [
+      -0.35910890153179353,
+      -0.27639653079154597
+    ],
+    "simulations": 1872
+  },
+  "spline_minus_fm120": {
+    "baseline_minus_candidate_group_nll": 0.30858803928464124,
+    "paired_simulation_bootstrap_95_ci": [
+      0.26815493950719765,
+      0.3520012706684018
+    ],
+    "simulations": 1872
+  },
+  "fm30_minus_fm120": {
+    "baseline_minus_candidate_group_nll": 0.6264216686277377,
+    "paired_simulation_bootstrap_95_ci": [
+      0.583909880185158,
+      0.6708215124310207
+    ],
+    "simulations": 1872
+  }
+}

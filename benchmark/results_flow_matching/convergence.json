@@ -1,0 +1,23 @@
+[
+  {
+    "seed": 11,
+    "validation_simulations": 256,
+    "mean_abs_nll_64_vs_128": 1.1725351214408875e-06,
+    "max_abs_nll_64_vs_128": 5.7220458984375e-06,
+    "mean_signed_nll_64_minus_128": -3.818422555923462e-08
+  },
+  {
+    "seed": 22,
+    "validation_simulations": 256,
+    "mean_abs_nll_64_vs_128": 1.30385160446167e-06,
+    "max_abs_nll_64_vs_128": 1.52587890625e-05,
+    "mean_signed_nll_64_minus_128": 2.1792948246002197e-07
+  },
+  {
+    "seed": 33,
+    "validation_simulations": 256,
+    "mean_abs_nll_64_vs_128": 1.2470409274101257e-06,
+    "max_abs_nll_64_vs_128": 1.33514404296875e-05,
+    "mean_signed_nll_64_minus_128": -3.4458935260772705e-08
+  }
+]

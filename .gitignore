@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+benchmark/data/
+benchmark/fm_samples.csv
+benchmark/samples.csv
+benchmark/**/*.npz
+benchmark/**/split_manifest.csv
+benchmark/**/per_simulation_nll.csv
+benchmark/**/example_samples.csv
+benchmark/**/*.pt

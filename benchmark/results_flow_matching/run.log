@@ -1,0 +1,33 @@
+FM seed=11 epoch=1 val_CFM_MSE=1.528083
+FM seed=11 epoch=5 val_CFM_MSE=1.231935
+FM seed=11 epoch=10 val_CFM_MSE=1.191357
+FM seed=11 epoch=15 val_CFM_MSE=1.165812
+FM seed=11 epoch=20 val_CFM_MSE=1.155137
+FM seed=11 epoch=25 val_CFM_MSE=1.147949
+FM seed=11 epoch=30 val_CFM_MSE=1.147159
+FM seed=11: evaluating ODE numerical convergence
+CONVERGENCE {"seed": 11, "validation_simulations": 256, "mean_abs_nll_64_vs_128": 1.1725351214408875e-06, "max_abs_nll_64_vs_128": 5.7220458984375e-06, "mean_signed_nll_64_minus_128": -3.818422555923462e-08}
+FM seed=11: evaluating held-out likelihood
+RESULT {"model": "conditional_flow_matching", "seed": 11, "test_group_nll": 3.8719455672825167, "test_atom_nll": 3.977961240689966, "mean_wasserstein_group_weighted": 0.04996378689019363, "mean_histogram_js_group_weighted": 0.005426722396209919, "best_epoch": 28, "epochs_run": 30, "best_validation_cfm_mse": 1.1467005207579346, "training_seconds": 8.840793553000367, "parameters": 157701, "test_likelihood_seconds": 46.42570522599999}
+FM seed=22 epoch=1 val_CFM_MSE=1.536651
+FM seed=22 epoch=5 val_CFM_MSE=1.226286
+FM seed=22 epoch=10 val_CFM_MSE=1.184870
+FM seed=22 epoch=15 val_CFM_MSE=1.169212
+FM seed=22 epoch=20 val_CFM_MSE=1.153766
+FM seed=22 epoch=25 val_CFM_MSE=1.147064
+FM seed=22 epoch=30 val_CFM_MSE=1.145442
+FM seed=22: evaluating ODE numerical convergence
+CONVERGENCE {"seed": 22, "validation_simulations": 256, "mean_abs_nll_64_vs_128": 1.30385160446167e-06, "max_abs_nll_64_vs_128": 1.52587890625e-05, "mean_signed_nll_64_minus_128": 2.1792948246002197e-07}
+FM seed=22: evaluating held-out likelihood
+RESULT {"model": "conditional_flow_matching", "seed": 22, "test_group_nll": 3.8684076779470034, "test_atom_nll": 3.980533990190709, "mean_wasserstein_group_weighted": 0.0380265927692276, "mean_histogram_js_group_weighted": 0.005581711211091277, "best_epoch": 29, "epochs_run": 30, "best_validation_cfm_mse": 1.144337054655732, "training_seconds": 8.16008307500033, "parameters": 157701, "test_likelihood_seconds": 47.44974576599998}
+FM seed=33 epoch=1 val_CFM_MSE=1.529787
+FM seed=33 epoch=5 val_CFM_MSE=1.230944
+FM seed=33 epoch=10 val_CFM_MSE=1.191055
+FM seed=33 epoch=15 val_CFM_MSE=1.170324
+FM seed=33 epoch=20 val_CFM_MSE=1.158505
+FM seed=33 epoch=25 val_CFM_MSE=1.148980
+FM seed=33 epoch=30 val_CFM_MSE=1.144713
+FM seed=33: evaluating ODE numerical convergence
+CONVERGENCE {"seed": 33, "validation_simulations": 256, "mean_abs_nll_64_vs_128": 1.2470409274101257e-06, "max_abs_nll_64_vs_128": 1.33514404296875e-05, "mean_signed_nll_64_minus_128": -3.4458935260772705e-08}
+FM seed=33: evaluating held-out likelihood
+RESULT {"model": "conditional_flow_matching", "seed": 33, "test_group_nll": 3.868265106138982, "test_atom_nll": 3.986838890693122, "mean_wasserstein_group_weighted": 0.04279923708345758, "mean_histogram_js_group_weighted": 0.005519432744759059, "best_epoch": 30, "epochs_run": 30, "best_validation_cfm_mse": 1.1447131365249255, "training_seconds": 7.784187954999652, "parameters": 157701, "test_likelihood_seconds": 48.75884084500012}

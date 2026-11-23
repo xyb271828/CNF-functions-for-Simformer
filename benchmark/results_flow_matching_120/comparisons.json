@@ -1,0 +1,34 @@
+{
+  "conditional_spline": {
+    "baseline_minus_candidate_group_nll": 0.30858803928464124,
+    "paired_simulation_bootstrap_95_ci": [
+      0.26815493950719765,
+      0.3520012706684018
+    ],
+    "simulations": 1872
+  },
+  "unconditional_spline": {
+    "baseline_minus_candidate_group_nll": 1.4158587791480504,
+    "paired_simulation_bootstrap_95_ci": [
+      1.344760888640891,
+      1.4869027442165452
+    ],
+    "simulations": 1872
+  },
+  "conditional_gaussian": {
+    "baseline_minus_candidate_group_nll": 2.4164560326434987,
+    "paired_simulation_bootstrap_95_ci": [
+      2.3264094772432733,
+      2.5114343253372913
+    ],
+    "simulations": 1872
+  },
+  "unconditional_gmm": {
+    "baseline_minus_candidate_group_nll": 1.6173811386366972,
+    "paired_simulation_bootstrap_95_ci": [
+      1.5492078961529319,
+      1.6878996704210716
+    ],
+    "simulations": 1872
+  }
+}

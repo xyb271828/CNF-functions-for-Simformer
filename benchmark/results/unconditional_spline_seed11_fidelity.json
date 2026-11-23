@@ -1,0 +1,30 @@
+{
+  "X": {
+    "wasserstein_group_weighted": 0.039129728961855,
+    "histogram_js_group_weighted": 0.00602772920286888,
+    "ks_statistic_atom_weighted": 0.02885331347728965
+  },
+  "Y": {
+    "wasserstein_group_weighted": 0.03533121906277757,
+    "histogram_js_group_weighted": 0.004113770350737287,
+    "ks_statistic_atom_weighted": 0.0191734921816828
+  },
+  "Vx": {
+    "wasserstein_group_weighted": 0.06258824722695557,
+    "histogram_js_group_weighted": 0.005561939150797248,
+    "ks_statistic_atom_weighted": 0.03294862248696947
+  },
+  "Vy": {
+    "wasserstein_group_weighted": 0.02712915505321127,
+    "histogram_js_group_weighted": 0.0042083396734131865,
+    "ks_statistic_atom_weighted": 0.022338049143708117
+  },
+  "Vz": {
+    "wasserstein_group_weighted": 0.035070008318310184,
+    "histogram_js_group_weighted": 0.0025049907195873397,
+    "ks_statistic_atom_weighted": 0.08153387937453463
+  },
+  "mean_wasserstein_group_weighted": 0.03984967172462193,
+  "mean_histogram_js_group_weighted": 0.004483353819480789,
+  "correlation_matrix_frobenius_atom_weighted": 0.16970344730885062
+}

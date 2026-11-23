@@ -1,0 +1,12 @@
+{
+  "unit_tests_passed": 8,
+  "fm_model_seed_runs": 6,
+  "baseline_model_seed_runs": 11,
+  "shared_data_manifest_identical": true,
+  "training_transforms_identical": true,
+  "all_ode_likelihood_convergence_checks_passed": true,
+  "group_metrics_match_summaries": true,
+  "fm_offline_sampling_smoke_check": "100 finite 5D physical samples",
+  "budget_extension_exploratory": true,
+  "retrospective_extension_not_historical_2024_result": true
+}

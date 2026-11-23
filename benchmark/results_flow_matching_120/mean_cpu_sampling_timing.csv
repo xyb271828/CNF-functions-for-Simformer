@@ -1,0 +1,9 @@
+model,solver,steps,p50_ms
+conditional_spline,direct,0,20.747441333242023
+flow_matching,euler,8,11.388803833294029
+flow_matching,euler,16,21.340769666646036
+flow_matching,euler,32,40.81235050004276
+flow_matching,euler,64,81.44632650025112
+flow_matching,rk4,8,39.83319949990497
+flow_matching,rk4,16,77.13614466653478
+flow_matching,rk4,32,146.9879908334709

@@ -1,0 +1,8 @@
+{
+  "integrity_unit_tests_passed": 4,
+  "checkpoint_sampling_smoke_test": "100 finite 5D physical samples",
+  "saved_group_metrics_match_summary": true,
+  "model_seed_runs": 11,
+  "held_out_simulations": 1872,
+  "new_experiment_not_historical_2024_result": true
+}
