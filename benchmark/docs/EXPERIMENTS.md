@@ -134,6 +134,38 @@ Recover batch/run provenance, evaluate parameter-range or source-batch holdout,
 obtain repeated simulator samples at fixed controls, and measure the original
 simulator on the same hardware before making physical-surrogate claims.
 
+## Matched-data Simformer extension
+
+A new [Simformer comparison](../SIMFORMER_COMPARISON_ZH.md) now provides the
+cold-atom baseline that the historical toy results could not establish.
+The official minimal-example JAX backbone has two layers, two attention heads,
+and 45,994 parameters. Nine controls remain observed while five states are
+noised. MLE-weighted DSM selects checkpoints on validation DSM; held-out NLL
+uses probability-flow RK4 with exact five-dimensional divergence. All six
+64/128-step validation convergence checks pass. Upstream commit and MIT license
+are retained in `src/vendor_simformer/`.
+
+| Maximum epochs | Simformer NLL | Conditional spline NLL | FM NLL |
+|---|---:|---:|---:|
+| 30 | 4.3517 ± 0.0255 | 3.5517 ± 0.1381 | 3.8695 ± 0.0021 |
+| 120 | 4.3895 ± 0.3940 | Not run | 3.2431 ± 0.0212 |
+
+At maximum 30 epochs, spline reduces NLL relative to Simformer by 0.8000 nats
+(paired 95% interval 0.7502–0.8484), and FM by 0.4822 nats (0.4383–0.5246).
+At maximum 120 epochs, FM reduces NLL by 1.1464 nats (1.0921–1.2059).
+Intervals cover test-group sampling uncertainty, with seed SD reported separately.
+Actual Simformer epochs are 30/30/30 and 41/24/69, respectively. The longer
+setting has greater seed variation and does not consistently improve NLL.
+Different architectures, objectives, schedule lengths and validation criteria
+limit causal attribution or claims about best achievable performance.
+
+This is a standalone fixed-condition likelihood adaptation, not the complete
+arbitrary-conditioning paper reproduction or integration of CNF/FM into Simformer.
+All models have byte-identical split manifests and training scalers. The suite
+now has 13 tests, including analytic Gaussian VE density and independently
+verified divergence. New JAX timings and historical PyTorch timings come from
+separate runs and are not a controlled cross-framework speed comparison.
+
 ## References
 
 - [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747).

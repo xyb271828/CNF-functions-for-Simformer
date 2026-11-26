@@ -1,0 +1,40 @@
+Simformer seed=11 epoch=1 validation_DSM=71.039082 wall=4.0s
+Simformer seed=11 epoch=5 validation_DSM=66.766771 wall=17.9s
+Simformer seed=11 epoch=10 validation_DSM=66.349864 wall=34.6s
+Simformer seed=11 epoch=15 validation_DSM=65.253295 wall=54.0s
+Simformer seed=11 epoch=20 validation_DSM=65.687905 wall=71.0s
+Simformer seed=11 epoch=25 validation_DSM=64.354563 wall=87.8s
+Simformer seed=11 epoch=30 validation_DSM=64.602862 wall=104.5s
+Simformer seed=11 epoch=35 validation_DSM=63.800709 wall=121.2s
+Simformer seed=11 epoch=40 validation_DSM=63.957457 wall=139.2s
+Simformer seed=11: likelihood convergence check
+CONVERGENCE {"seed": 11, "steps_low": 64, "steps_high": 128, "mean_abs_nll_difference": 5.3960829973220825e-05, "max_abs_nll_difference": 0.00021266937255859375}
+Simformer seed=11: evaluating held-out NLL
+RESULT {"model": "simformer_likelihood_adaptation", "seed": 11, "test_group_nll": 4.286888978523162, "test_atom_nll": 4.395248914421803, "likelihood_rk4_steps": 128, "ode_mean_wasserstein": 0.08579584477095982, "sde500_mean_wasserstein": 0.08033533896009788, "parameters": 45994, "best_epoch": 35, "epochs_run": 41, "optimizer_steps": 1886, "best_validation_dsm": 63.800708651542664, "training_seconds": 143.07118091300026, "initial_update_compilation_seconds": 2.4324681650000457, "test_likelihood_seconds": 341.7144646050001}
+Simformer seed=22 epoch=1 validation_DSM=70.332506 wall=3.6s
+Simformer seed=22 epoch=5 validation_DSM=66.690903 wall=17.1s
+Simformer seed=22 epoch=10 validation_DSM=65.610398 wall=33.8s
+Simformer seed=22 epoch=15 validation_DSM=64.893881 wall=50.8s
+Simformer seed=22 epoch=20 validation_DSM=64.936813 wall=68.1s
+Simformer seed=22: likelihood convergence check
+CONVERGENCE {"seed": 22, "steps_low": 64, "steps_high": 128, "mean_abs_nll_difference": 4.759058356285095e-05, "max_abs_nll_difference": 0.00017547607421875}
+Simformer seed=22: evaluating held-out NLL
+RESULT {"model": "simformer_likelihood_adaptation", "seed": 22, "test_group_nll": 4.824692612267067, "test_atom_nll": 4.814112832807199, "likelihood_rk4_steps": 128, "ode_mean_wasserstein": 0.15302792048688202, "sde500_mean_wasserstein": 0.10683267976823338, "parameters": 45994, "best_epoch": 18, "epochs_run": 24, "optimizer_steps": 1104, "best_validation_dsm": 64.54033195972443, "training_seconds": 81.9756433599996, "initial_update_compilation_seconds": 2.4041348430000653, "test_likelihood_seconds": 345.28577237399986}
+Simformer seed=33 epoch=1 validation_DSM=70.286982 wall=3.7s
+Simformer seed=33 epoch=5 validation_DSM=67.102798 wall=17.1s
+Simformer seed=33 epoch=10 validation_DSM=65.579267 wall=33.5s
+Simformer seed=33 epoch=15 validation_DSM=64.867088 wall=50.9s
+Simformer seed=33 epoch=20 validation_DSM=64.560479 wall=67.3s
+Simformer seed=33 epoch=25 validation_DSM=64.238998 wall=85.7s
+Simformer seed=33 epoch=30 validation_DSM=64.323132 wall=103.4s
+Simformer seed=33 epoch=35 validation_DSM=63.988390 wall=121.4s
+Simformer seed=33 epoch=40 validation_DSM=64.082773 wall=139.1s
+Simformer seed=33 epoch=45 validation_DSM=63.839860 wall=157.1s
+Simformer seed=33 epoch=50 validation_DSM=63.698649 wall=174.4s
+Simformer seed=33 epoch=55 validation_DSM=63.910449 wall=192.1s
+Simformer seed=33 epoch=60 validation_DSM=63.470219 wall=209.4s
+Simformer seed=33 epoch=65 validation_DSM=63.642242 wall=227.5s
+Simformer seed=33: likelihood convergence check
+CONVERGENCE {"seed": 33, "steps_low": 64, "steps_high": 128, "mean_abs_nll_difference": 5.5048614740371704e-05, "max_abs_nll_difference": 0.000255584716796875}
+Simformer seed=33: evaluating held-out NLL
+RESULT {"model": "simformer_likelihood_adaptation", "seed": 33, "test_group_nll": 4.056902909894665, "test_atom_nll": 4.195455793826685, "likelihood_rk4_steps": 128, "ode_mean_wasserstein": 0.12873037076682264, "sde500_mean_wasserstein": 0.11321473180254531, "parameters": 45994, "best_epoch": 63, "epochs_run": 69, "optimizer_steps": 3174, "best_validation_dsm": 63.435699343681335, "training_seconds": 241.83738583000013, "initial_update_compilation_seconds": 2.488398044999485, "test_likelihood_seconds": 352.76340046600035}

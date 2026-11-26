@@ -1,0 +1,71 @@
+{
+  "model": "Simformer, original minimal-example JAX backbone; likelihood-specialized cold-atom adaptation",
+  "upstream_commit": "a35055613aaae7c84067416932e5636ef34b2ed2",
+  "model_config": {
+    "value_embedding": 20,
+    "node_id_embedding": 20,
+    "condition_embedding": 10,
+    "node_embedding_init_std": 3.0,
+    "condition_embedding_init_std": 0.5,
+    "time_embedding_dim": 64,
+    "num_heads": 2,
+    "num_layers": 2,
+    "attn_size": 10,
+    "widening_factor": 3,
+    "num_hidden_layers": 1,
+    "output_scale_floor": 0.01,
+    "source": "original minimal-example model"
+  },
+  "sde": "VE",
+  "sigma_min": 0.001,
+  "sigma_max": 15.0,
+  "minimum_time": 0.01,
+  "condition_mask": "nine controls observed, five states generated",
+  "arbitrary_condition_training": false,
+  "edge_mask": "dense; no marginalization augmentation",
+  "selection": "validation MLE-weighted DSM; four fixed noise/time draws",
+  "train_weighting": "equal total weight per simulation",
+  "batch_size": 512,
+  "max_epochs": 30,
+  "epoch_steps": 46,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "patience": 6,
+  "optimizer": "AdamW, lr .001 cosine to .0001, weight_decay .0001, global gradient clip 5",
+  "terminal_mean": [
+    -3.2216967982279243e-10,
+    -1.0241321679593796e-12,
+    -1.3369816365127463e-10,
+    3.589633590372898e-10,
+    3.92253118874919e-10
+  ],
+  "terminal_std": [
+    15.033296585083008,
+    15.033296585083008,
+    15.033296585083008,
+    15.033296585083008,
+    15.033296585083008
+  ],
+  "terminal_prior": "training group-weighted moments plus VE terminal variance, diagonal Gaussian approximation",
+  "data_manifest_and_scaler_match_baselines": true,
+  "device": "CPU",
+  "CPU_affinity": [
+    0,
+    1
+  ],
+  "packages": {
+    "jax": "0.4.38",
+    "jaxlib": "0.4.38",
+    "dm-haiku": "0.0.13",
+    "optax": "0.2.4",
+    "numpy": "2.3.5",
+    "torch": "2.15.0+cpu"
+  },
+  "likelihood": "probability-flow ODE, exact 5D divergence, numerical RK4; fixed t_min endpoint",
+  "comparison_scope": "same retained subset and shared exploratory holdout; different architecture/framework/objective",
+  "historical_toy_steps": 75000,
+  "historical_toy_not_reused_as_cold_atom_result": true
+}

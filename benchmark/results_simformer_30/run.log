@@ -1,0 +1,33 @@
+Simformer seed=11 epoch=1 validation_DSM=71.044906 wall=4.0s
+Simformer seed=11 epoch=5 validation_DSM=66.810675 wall=17.9s
+Simformer seed=11 epoch=10 validation_DSM=65.979271 wall=34.9s
+Simformer seed=11 epoch=15 validation_DSM=65.167386 wall=54.3s
+Simformer seed=11 epoch=20 validation_DSM=64.641284 wall=71.4s
+Simformer seed=11 epoch=25 validation_DSM=64.200321 wall=88.4s
+Simformer seed=11 epoch=30 validation_DSM=64.066387 wall=105.1s
+Simformer seed=11: likelihood convergence check
+CONVERGENCE {"seed": 11, "steps_low": 64, "steps_high": 128, "mean_abs_nll_difference": 5.99101185798645e-05, "max_abs_nll_difference": 0.0002651214599609375}
+Simformer seed=11: evaluating held-out NLL
+RESULT {"model": "simformer_likelihood_adaptation", "seed": 11, "test_group_nll": 4.365952802105197, "test_atom_nll": 4.3669102687225, "likelihood_rk4_steps": 128, "ode_mean_wasserstein": 0.07488430414607768, "sde500_mean_wasserstein": 0.07003510681325333, "parameters": 45994, "best_epoch": 29, "epochs_run": 30, "optimizer_steps": 1380, "best_validation_dsm": 64.05337750911713, "training_seconds": 105.09771046700007, "initial_update_compilation_seconds": 2.3919900660002895, "test_likelihood_seconds": 364.43311165099976}
+Simformer seed=22 epoch=1 validation_DSM=70.337321 wall=4.1s
+Simformer seed=22 epoch=5 validation_DSM=66.534669 wall=17.8s
+Simformer seed=22 epoch=10 validation_DSM=65.349129 wall=34.8s
+Simformer seed=22 epoch=15 validation_DSM=65.539890 wall=51.6s
+Simformer seed=22 epoch=20 validation_DSM=64.235070 wall=68.7s
+Simformer seed=22 epoch=25 validation_DSM=64.045043 wall=85.8s
+Simformer seed=22 epoch=30 validation_DSM=63.930623 wall=103.2s
+Simformer seed=22: likelihood convergence check
+CONVERGENCE {"seed": 22, "steps_low": 64, "steps_high": 128, "mean_abs_nll_difference": 4.962831735610962e-05, "max_abs_nll_difference": 0.000247955322265625}
+Simformer seed=22: evaluating held-out NLL
+RESULT {"model": "simformer_likelihood_adaptation", "seed": 22, "test_group_nll": 4.366850898959087, "test_atom_nll": 4.449523619902462, "likelihood_rk4_steps": 128, "ode_mean_wasserstein": 0.08964554622293892, "sde500_mean_wasserstein": 0.05629595077735727, "parameters": 45994, "best_epoch": 30, "epochs_run": 30, "optimizer_steps": 1380, "best_validation_dsm": 63.930622696876526, "training_seconds": 103.23530269599996, "initial_update_compilation_seconds": 2.759077054000045, "test_likelihood_seconds": 343.90856898200036}
+Simformer seed=33 epoch=1 validation_DSM=70.286501 wall=3.9s
+Simformer seed=33 epoch=5 validation_DSM=66.881884 wall=17.1s
+Simformer seed=33 epoch=10 validation_DSM=65.255892 wall=33.9s
+Simformer seed=33 epoch=15 validation_DSM=64.865807 wall=50.6s
+Simformer seed=33 epoch=20 validation_DSM=64.184215 wall=67.2s
+Simformer seed=33 epoch=25 validation_DSM=63.961838 wall=85.6s
+Simformer seed=33 epoch=30 validation_DSM=63.965564 wall=103.2s
+Simformer seed=33: likelihood convergence check
+CONVERGENCE {"seed": 33, "steps_low": 64, "steps_high": 128, "mean_abs_nll_difference": 4.649534821510315e-05, "max_abs_nll_difference": 0.0001430511474609375}
+Simformer seed=33: evaluating held-out NLL
+RESULT {"model": "simformer_likelihood_adaptation", "seed": 33, "test_group_nll": 4.322265824825524, "test_atom_nll": 4.364900336013476, "likelihood_rk4_steps": 128, "ode_mean_wasserstein": 0.07683216980517685, "sde500_mean_wasserstein": 0.06993147098366415, "parameters": 45994, "best_epoch": 29, "epochs_run": 30, "optimizer_steps": 1380, "best_validation_dsm": 63.947380900382996, "training_seconds": 103.22839463000037, "initial_update_compilation_seconds": 2.3172026780002852, "test_likelihood_seconds": 351.09449916999984}

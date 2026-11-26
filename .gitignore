@@ -11,3 +11,6 @@ benchmark/**/split_manifest.csv
 benchmark/**/per_simulation_nll.csv
 benchmark/**/example_samples.csv
 benchmark/**/*.pt
+
+benchmark/**/*.pkl
+benchmark/ARTIFACT_SHA256.json

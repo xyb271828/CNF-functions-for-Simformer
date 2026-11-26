@@ -6,7 +6,8 @@ Conditional density estimation and sampling for five-dimensional atomic states
 
 The repository contains the original [`CNF_functions.py`](CNF_functions.py) and a
 new [reproducible benchmark](benchmark/) comparing statistical baselines,
-conditional spline normalizing flows, and conditional Flow Matching.
+conditional spline normalizing flows, conditional Flow Matching, and a
+matched-data Simformer adaptation.
 The benchmark is a retrospective extension; its measurements are separate from
 the original research results.
 
@@ -27,11 +28,30 @@ lower is better.
 | Conditional spline flow | 30 | 3.5517 ± 0.1381 |
 | Conditional Flow Matching | 30 | 3.8695 ± 0.0021 |
 | Conditional Flow Matching, extended budget | 120 | **3.2431 ± 0.0212** |
+| Simformer cold-atom adaptation | 30 | 4.3517 ± 0.0255 |
+| Simformer cold-atom adaptation, extended budget | 120 | 4.3895 ± 0.3940 |
 
 The extended-budget FM setting improves mean NLL by **0.3086 nats** relative to
 the 30-epoch conditional spline baseline; the paired simulation-bootstrap 95%
 interval is **[0.2682, 0.3520]**. The budgets and checkpoint-selection objectives
 differ. This is an exploratory comparison, not an equal-budget superiority claim.
+
+At maximum 30 epochs, conditional spline reduces NLL relative to the Simformer
+adaptation by **0.8000 nats** (paired 95% interval **[0.7502, 0.8484]**), and FM
+by **0.4822 nats** (**[0.4383, 0.5246]**). At maximum 120 epochs, FM reduces NLL
+relative to Simformer by **1.1464 nats** (**[1.0921, 1.2059]**).
+
+The Simformer baseline uses the official two-layer, two-head minimal-example
+architecture, specialized to the fixed nine-control/five-state likelihood task.
+These are standalone alternatives; flows have not been integrated into Simformer.
+Different architectures, checkpoint objectives and early stopping limit claims
+about each method's best achievable performance. The larger-budget Simformer
+setting has substantially greater variation across seeds.
+
+See the [complete Simformer comparison](benchmark/SIMFORMER_COMPARISON_ZH.md)
+for actual epochs, numerical checks, configuration and reproduction commands.
+
+![Matched-data Simformer comparison](benchmark/simformer_comparison.png)
 
 ![Training-budget and sampling-cost comparison](benchmark/budget_comparison.png)
 
@@ -80,8 +100,9 @@ records and independently confirm source provenance.
 The existing test cohort was reused for the FM extension, and the extended budget
 was added after viewing the 30-epoch results. Further model selection should use
 validation data and an independent confirmation set. The old NLL of 3.11 used a
-different data pipeline and cannot be compared with this benchmark. The supplied
-Simformer evidence covers a toy example, not a cold-atom baseline.
+different data pipeline and cannot be compared with this benchmark. The historical
+Simformer evidence covers a toy example; the new cold-atom adaptation is a separate
+retrospective experiment.
 
 ## Implementation and references
 
@@ -90,6 +111,9 @@ Simformer evidence covers a toy example, not a cold-atom baseline.
 - Flow Matching: independent noise/data pairing, linear interpolation, a conditional
   velocity MLP, and numerical ODE sampling. Likelihood uses a reverse ODE with
   exact five-dimensional spatial divergence and numerical-convergence checks.
+- Simformer: official minimal-example JAX/Haiku backbone with conditional VE
+  score matching and probability-flow likelihood. Upstream source provenance and
+  MIT license are included in `benchmark/src/vendor_simformer/`.
 - Tests cover ambiguous-key exclusion, group balancing, sampling consistency and
   analytically solvable translation/scaling ODEs.
 - [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747).

@@ -1,0 +1,34 @@
+{
+  "Simformer adaptation | max 30 minus Conditional spline | max 30": {
+    "baseline_minus_candidate_group_nll": 0.7999840208501983,
+    "paired_simulation_bootstrap_95_ci": [
+      0.7501887011762228,
+      0.8484372796092862
+    ],
+    "simulations": 1872
+  },
+  "Simformer adaptation | max 30 minus Flow Matching | max 30": {
+    "baseline_minus_candidate_group_nll": 0.48215039150710176,
+    "paired_simulation_bootstrap_95_ci": [
+      0.4383105128070675,
+      0.5246340759228696
+    ],
+    "simulations": 1872
+  },
+  "Simformer adaptation | max 120 minus Flow Matching | max 120": {
+    "baseline_minus_candidate_group_nll": 1.146377051733202,
+    "paired_simulation_bootstrap_95_ci": [
+      1.0920627871648652,
+      1.2058936389547639
+    ],
+    "simulations": 1872
+  },
+  "Simformer adaptation | max 120 minus Conditional spline | max 30": {
+    "baseline_minus_candidate_group_nll": 0.8377890124485606,
+    "paired_simulation_bootstrap_95_ci": [
+      0.7864032860811286,
+      0.8875069489871218
+    ],
+    "simulations": 1872
+  }
+}

@@ -5,6 +5,31 @@ generative-modeling work. Source, aggregate evidence,
 plots and execution logs are included. Source CSVs, sample archives, per-simulation
 losses, row-level ID manifests and model archives are not redistributed or tracked by Git.
 
+## Matched-data Simformer baseline (v3)
+
+See [the full comparison](SIMFORMER_COMPARISON_ZH.md) for results and commands.
+The new JAX/Haiku baseline uses the official minimal-example two-layer/two-head
+architecture, specialized to nine observed controls and five generated states.
+It is a standalone conditional-likelihood adaptation, not integration of flows
+into Simformer or reproduction of all arbitrary-conditioning paper experiments.
+Source provenance and the upstream MIT license are in `src/vendor_simformer/`.
+
+Maximum 30-epoch NLL: Simformer **4.3517 ± 0.0255**, conditional spline
+**3.5517 ± 0.1381**, FM **3.8695 ± 0.0021**. Maximum 120-epoch NLL:
+Simformer **4.3895 ± 0.3940**, FM **3.2431 ± 0.0212**. Each uses three seeds and
+byte-identical splits/scalers. Epochs are upper limits with validation early stopping.
+
+```bash
+python src/simformer_cold_atom.py --data-dir /path/to/data/compiled --baseline-dir results --out results_simformer_30 --epochs 30 --seeds 11 22 33
+python src/simformer_cold_atom.py --data-dir /path/to/data/compiled --baseline-dir results --out results_simformer_120 --epochs 120 --seeds 11 22 33
+python src/report_simformer.py --root .
+```
+
+First reproduce the spline and FM runs to regenerate private row-level artifacts
+needed by the comparison report. The public repository includes aggregate metrics,
+convergence checks, training histories, plots, logs and configuration; local
+training regenerates checkpoints, sample archives and per-simulation losses.
+
 ## Data contract
 
 Supply a directory containing:

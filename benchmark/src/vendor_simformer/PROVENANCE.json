@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/mackelab/simformer",
+  "commit": "a35055613aaae7c84067416932e5636ef34b2ed2",
+  "files": {
+    "attention.py": {
+      "upstream_path": "src/probjax/probjax/nn/attention.py",
+      "upstream_sha256": "0f57043ba52d23cd4ffc96bbc31cf6d25ad6f9e0029b4221ea42951fa3131bdf",
+      "modification": "none"
+    },
+    "transformers.py": {
+      "upstream_path": "src/probjax/probjax/nn/transformers.py",
+      "upstream_sha256": "ddb4b9fe8c6eb21c5658f04d250b5cba95a39a19aed650adcd8e12e62b588de5",
+      "modification": "none"
+    },
+    "helpers.py": {
+      "upstream_path": "src/probjax/probjax/nn/helpers.py",
+      "upstream_sha256": "112f7767308df5018e3de815e98a692f91fa695e032aab49f037aa28db06ef93",
+      "selected_definitions": [
+        "GaussianFourierEmbedding"
+      ],
+      "modification": "unmodified definition bodies; minimal imports to avoid obsolete unrelated JAX internals"
+    },
+    "tokenizer.py": {
+      "upstream_path": "src/probjax/probjax/nn/tokenizer.py",
+      "upstream_sha256": "6425bff9f9ac8be9b0dd203ba08d1141011c509962dfad4a3dfaa8683f8f2702",
+      "selected_definitions": [
+        "Tokenizer",
+        "ScalarTokenizer"
+      ],
+      "modification": "unmodified definition bodies; minimal imports to avoid obsolete unrelated JAX internals"
+    },
+    "model.py": {
+      "upstream_path": "src/scoresbibm/scoresbibm/methods/neural_nets.py",
+      "upstream_sha256": "a7328d65d678e23a7c4dcefb0576ec6c6775e28cb7515b842cfc0adf43267f90",
+      "selected_definitions": [
+        "scalar_transformer_model"
+      ],
+      "modification": "unmodified definition bodies; minimal imports to avoid obsolete unrelated JAX internals"
+    },
+    "minimal_model.py": {
+      "upstream_path": "example/1_minimal_code_example.ipynb",
+      "upstream_sha256": "3e0d0055bb4688f6753ccb3a14a313a666a883d3a2b38a3f2a04bc85865a9869",
+      "selected_definitions": [
+        "model"
+      ],
+      "modification": "unmodified model body; nodes_max=14; original 20/20/10 embeddings and VE output-scale clip .01 supplied by minimal local environment"
+    }
+  }
+}
